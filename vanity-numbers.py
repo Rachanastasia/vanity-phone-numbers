@@ -11,17 +11,28 @@ hash = {
     '9': (['w', 'x', 'y', 'z'])
 }
 
+def find_all_wildcard_chars(num, i):
+
 
 def find_vanity_numbers(num, word):
+    combinations = new set() #unique values, no k:v pairs
+
+#make set to return all valid letters 
+
     i=0 #idx for letters in words
     for n in num: 
         letter = hash[n]
-        if i-1 >= len(word): return
-        if word[i] in letter: 
-            print(word[i], n)
-            i+=1
-        # else: 
-        #     if i > word.len: print('No matches found')
+        print(len(word))
+        if i+1 == len(word): 
+            combinations.add
+            print('LIMIT REACHED')
+        elif word[i] in letter: i+=1
+
+
+
+
+
+
 
 # loop through numbers
 # check against dict
