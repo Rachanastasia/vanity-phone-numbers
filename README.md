@@ -5,15 +5,25 @@
 Vanity phone numbers are often displayed with letters instead of numbers, such as 1800flowers (18003569377). Write a program that, when provided with a potential phone number (3569377) and word (flower), returns all combinations containing the search word ("flowerp", "flowerq", "flowerr", "flowers"). For reference the numbers of a phone kepad map to letters as shown in the hash below. Note 0 and 1 do not have corresponding letters. 
 
 Digit to Letter hash: 
+
 0: [""]
+
 1: [""]
+
 2: ["a","b","c"]
+
 3: ["d","e","f"]
+
 4: ["g","h","i"]
+
 5: ["j","k","l"]
+
 6: ["m","n","o"]
+
 7: ["p","q","r","s"]
+
 8: ["t","u","v"]
+
 9: ["w","x","y","z"]
 
 Example:
