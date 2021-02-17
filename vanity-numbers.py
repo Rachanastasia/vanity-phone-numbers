@@ -1,24 +1,34 @@
-# create dictionary to store num => letter conversions
-
-
 hash = {
-    0: None,
-    1: None,
-    2: {'a', 'b', 'c'},
-    3: {'d', 'e', 'f'},
-    4: {'g', 'h', 'i'},
-    5: {'j', 'k', 'l'},
-    6: {'m', 'n', 'o'},
-    7: {'p', 'q', 'r', 's'},
-    8: {'t', 'u', 'v'},
-    9: {'w', 'x', 'y', 'z'}
+    '0': None,
+    '1': None,
+    '2': (['a', 'b', 'c']),
+    '3': (['d', 'e', 'f']),
+    '4': (['g', 'h', 'i']),
+    '5': (['j', 'k', 'l']),
+    '6': (['m', 'n', 'o']),
+    '7': (['p', 'q', 'r', 's']),
+    '8': (['t', 'u', 'v']),
+    '9': (['w', 'x', 'y', 'z'])
 }
 
 
 def find_vanity_numbers(num, word):
+    i=0 #idx for letters in words
+    for n in num: 
+        letter = hash[n]
+        if i-1 >= len(word): return
+        if word[i] in letter: 
+            print(word[i], n)
+            i+=1
+        # else: 
+        #     if i > word.len: print('No matches found')
+
 # loop through numbers
 # check against dict
 # if first num doesn't match first word, match next
+
+# if valid match of whole word is found, find all other letter combinations by 
+# reaching into table and looping through the set, returning all
 
 
 
